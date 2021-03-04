@@ -5,3 +5,4 @@ class TestData:
     PASSWORD = "Password1234"
     LOGIN_PAGE_TITLE = "My Study Life"
     DASHBOARD_PAGE_TITLE = "Dashboard - My Study Life"
+    SCHEDULE_PAGE_TITLE = "Schedule"

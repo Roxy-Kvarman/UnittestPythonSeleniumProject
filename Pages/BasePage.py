@@ -8,8 +8,9 @@ import Logger.Logger as L
 class BasePage:
     def __init__(self, driver, page_title):
         self.driver = driver
-        self.page_title = page_title
-        self.verify_page_title(page_title)
+        if len(page_title) != 0:
+            self.page_title = page_title
+            self.verify_page_title(page_title)
 
     def verify_page_title(self, page_title):
         is_title = WebDriverWait(self.driver, 30).until(EC.title_contains(page_title))
